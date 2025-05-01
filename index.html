@@ -12,18 +12,22 @@
     <h1>Task Manager</h1>
 
     <form> 
-        <input type = "text" id = "task" value = "task name">
-        <select id="priority" name="priority" title = "priority">
+        <label for="inputField"></label>
+        <input type="text" id="taskName" name="taskName" placeholder = "Task Name">
+        <select id="priority" name="priority" title = "priority" n>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
         </select>
-        <input type = "checkbox" id = "importance"> 
-        <label>Important</label>
-        <button id = "submit">Add Task</button>
+        <label>
+            <input type = "checkbox" id = "importance"> 
+        </label>
+        <label>Important
+            <button id = "submit" type="button">Add Task</button>
+        </label>        
     </form>
+
     <div id = "taskmanager"></div>
-    <p id = "result"> </p>
 
 </body>
 </html>
