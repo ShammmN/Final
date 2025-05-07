@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskManager</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src = "code.js" defer></script>
-    <h1>Task Manager</h1>
+  <h1>Task Manager</h1>
+  <form id="taskForm">
+    <input type="text" id="taskName" placeholder="Task Name" required>
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <label>
+      <input type="checkbox" id="importance"> Important
+    </label>
+    <button type="submit" id="submit">Add Task</button>
+  </form>
 
-    <form> 
-        <label for="inputField"></label>
-        <input type="text" id="taskName" name="taskName" placeholder = "Task Name">
-        <select id="priority" name="priority" title = "priority" n>
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-        </select>
-        <label>
-            <input type = "checkbox" id = "importance"> 
-        </label>
-        <label>Important
-            <button id = "submit" type="button">Add Task</button>
-        </label>        
-    </form>
+  <div id="taskmanager"></div>
 
-    <div id = "taskmanager"></div>
-
+  <script src="code.js"></script>
 </body>
 </html>
